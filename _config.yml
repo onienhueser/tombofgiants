@@ -4,7 +4,7 @@ email: info@tombofgiants.de
 description: > # this means to ignore newlines until "baseurl:"
  Wir, Tomb of Giants, sind eine Metal-Band aus Melle in Deutschland.
  Unsere Musik ist vielseitig und deckt viele Sub-Genres des Metal ab. Es ist für jeden etwas dabei.
-baseurl: "/tombofgiants/" # the subpath of your site, e.g. /blog/
+baseurl: "/tombofgiants" # the subpath of your site, e.g. /blog/
 url: "" # the base hostname & protocol for your site
 twitter_username: tombofgiants
 
