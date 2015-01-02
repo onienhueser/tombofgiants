@@ -1,0 +1,10 @@
+---
+layout: default
+---
+<article class="page">
+	{% if page.image %}<div class="page-image-wrap"><img class="page-image" src="{{page.image | prepend: "/assets/images/members/" }}" alt="{{ page.imageAlt }}" /></div>{% endif %}
+	<div class="page-content {% if page.image %}page-content--pullTop{% endif %}">
+		<h2 class="page-title">{{ page.title }}</h2>
+		{{ content }}
+	</div>
+</article>

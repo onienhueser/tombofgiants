@@ -1,0 +1,34 @@
+---
+layout: default
+---
+{% assign post = page %}
+<div class="page-content">
+	<article class="h-entry">
+		<h1 class="p-name">{{ post.title }}</h1>
+		<small class="p-meta">
+			{% if post.author %}Veröffentlicht von <span class="p-autor h-card">{{ post.author }}</span>{% endif %}
+			am <time class="dt-published" datetime="{{ post.date | date_to_xmlschema }}">
+				{{ post.date | date: "%d" }}.
+				{% assign month = post.date | date: "%-m" %}
+				{% case month %}
+					{% when '1' %}Januar
+					{% when '2' %}Februar
+					{% when '3' %}M&auml;rz
+					{% when '4' %}April
+					{% when '5' %}Mai
+					{% when '6' %}Juni
+					{% when '7' %}Juli
+					{% when '8' %}August
+					{% when '9' %}September
+					{% when '10' %}Oktober
+					{% when '11' %}November
+					{% when '12' %}Dezember
+				{% endcase %}
+				{{ post.date | date: "%Y" }}
+			</time>
+		</small>
+		<div class="e-content">
+			{{ content }}
+		</div>
+	</article>
+</div>

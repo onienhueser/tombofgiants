@@ -1,0 +1,38 @@
+---
+layout: default
+---
+
+<div class="page-content">
+	{% for post in site.posts %}
+		<article class="h-entry home-post">
+			<h2 class="p-name"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+			<small class="p-meta">
+				{% if post.author %}Veröffentlicht von <span class="p-autor h-card">{{ post.author }}</span>{% endif %}
+				am <time class="dt-published" datetime="{{ post.date | date_to_xmlschema }}">
+					{{ post.date | date: "%d" }}.
+					{% assign month = post.date | date: "%-m" %}
+					{% case month %}
+						{% when '1' %}Januar
+						{% when '2' %}Februar
+						{% when '3' %}M&auml;rz
+						{% when '4' %}April
+						{% when '5' %}Mai
+						{% when '6' %}Juni
+						{% when '7' %}Juli
+						{% when '8' %}August
+						{% when '9' %}September
+						{% when '10' %}Oktober
+						{% when '11' %}November
+						{% when '12' %}Dezember
+					{% endcase %}
+					{{ post.date | date: "%Y" }}
+				</time>
+			</small>
+			<div class="p-summary">
+				{{ post.excerpt }}
+				<a href="{{ post.url }}">&#8594; Weiterlesen</a>
+			</div>
+		</article>
+	{% endfor %}
+	<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+</div>

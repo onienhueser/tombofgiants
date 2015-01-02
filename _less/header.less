@@ -1,0 +1,64 @@
+.header {
+	text-align: center;
+	width: 100%;
+	float: left;
+}
+.header-top {
+	display: inline-block;
+	position: relative;
+	float: left;
+	width: 100%;
+	height: @header-logo-height;
+	margin: 0;
+
+	background: @black;
+	z-index: 3;
+}
+.header-logo {
+	height: @header-logo-height;
+}
+.header-navigation {
+	display: inline-block;
+	position: relative;
+	float: left;
+	height: @header-nav-height;
+	width: 100%;
+	margin: 0;
+	border: 1px solid darken(@darkGray, 5%);
+	border-left: none;
+	border-right: none;
+
+	background: @green;
+	z-index: 2;
+	box-shadow: 0px 4px 9px -4px black;
+}
+.header-navigation--sub {
+	background: rgba(255,255,255,0.025);
+	box-shadow: none;
+}
+.header-navigation-link {
+	float: left;
+	height: @header-nav-height;
+	width: 100%/3;
+	line-height: @header-nav-height + 2;
+	transition: ease .5s;
+	cursor: pointer;
+	border-left: 1px solid rgba(0, 0, 0, 0.2);
+	box-sizing: border-box;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 100;
+	font-size: 0.85em;
+	padding: 0 5px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	&:hover {
+		background: rgba(0, 0, 0, 0.075);
+	}
+}
+.header-navigation-link--sub {
+	font-size: 0.75em;
+	border-left-color: darken(@darkGray, 5%);
+	width: 100%/5;
+}

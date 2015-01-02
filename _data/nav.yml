@@ -1,0 +1,24 @@
+- title: "Startseite"
+  href: "/"
+
+- title: "Band"
+  href: "/band/"
+  subcategories:
+
+   - subtitle: "Sansal - Vocals"
+     subhref: "/band/sansal/"
+
+   - subtitle: "Oliver - Gitarre & Vocals"
+     subhref: "/band/oliver/"
+
+   - subtitle: "Ian - Gitarre"
+     subhref: "/band/ian/"
+
+   - subtitle: "Daniel - Bass & Vocals"
+     subhref: "/band/daniel/"
+
+   - subtitle: "Mirco - Drums"
+     subhref: "/band/mirco/"
+
+- title: "Live"
+  href: "/live/"

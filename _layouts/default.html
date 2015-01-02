@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	{% include head.html %}
+	<body>
+		{% include header.html %}
+		{% strip %}
+		{% if page.hasSubs == true or page.parent != null %}
+		<main role="main" class="main--subMenu">
+	{% else %}
+		<main role="main">
+	{% endif %}{% endstrip %}
+			{{ content }}
+		</main>
+		{% include footer.html %}
+	</body>
+</html>

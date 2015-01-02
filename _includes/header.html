@@ -1,0 +1,23 @@
+{% assign currentUrl = page.url | remove: 'index.html' %}
+		<header class="header">
+			<div class="header-top">
+				<a href="{{ site.baseurl }}/"><img class="header-logo" src="{{ "/assets/images/logo.png" | prepend: site.baseurl }}" alt="Band Logo {{ site.title }}"></a>
+			</div>
+		</header>
+	{% strip %}
+		<nav class="header-navigation">
+	{% for link in site.data.nav %}
+		{% if link.title %}
+			<a class="header-navigation-link {% if link.href == currentUrl%} header-navigation-link--active {% endif %}" href="{{ link.href | prepend: site.baseurl }}">{{ link.title }}</a>
+		{% endif %}
+	{% endfor %}
+		</nav>
+	{% for link in site.data.nav %}
+		{% if link.subcategories != null and (link.href == page.parent or link.href == currentUrl) %}
+		<nav class="header-navigation header-navigation--sub">
+			{% for subLink in link.subcategories %}
+			<a class="header-navigation-link header-navigation-link--sub" href="{{ subLink.subhref | prepend: site.baseurl }}">{{ subLink.subtitle }}</a>
+			{% endfor %}
+		</nav>
+		{% endif %}
+	{% endfor %}{% endstrip %}
