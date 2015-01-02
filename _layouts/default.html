@@ -3,12 +3,11 @@
 	{% include head.html %}
 	<body>
 		{% include header.html %}
-		{% strip %}
 		{% if page.hasSubs == true or page.parent != null %}
 		<main role="main" class="main--subMenu">
 	{% else %}
 		<main role="main">
-	{% endif %}{% endstrip %}
+	{% endif %}
 			{{ content }}
 		</main>
 		{% include footer.html %}

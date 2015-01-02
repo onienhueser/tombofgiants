@@ -4,7 +4,6 @@
 				<a href="{{ site.baseurl }}/"><img class="header-logo" src="{{ "/assets/images/logo.png" | prepend: site.baseurl }}" alt="Band Logo {{ site.title }}"></a>
 			</div>
 		</header>
-	{% strip %}
 		<nav class="header-navigation">
 	{% for link in site.data.nav %}
 		{% if link.title %}
@@ -20,4 +19,4 @@
 			{% endfor %}
 		</nav>
 		{% endif %}
-	{% endfor %}{% endstrip %}
+	{% endfor %}
