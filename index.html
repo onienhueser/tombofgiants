@@ -1,7 +1,18 @@
 ---
 layout: default
 ---
-
+<div class="slider">
+	<ul class="slider-list">
+		{% assign sorted_members= (site.members | sort: 'pos') %}
+		{% for member in sorted_members %}
+		{% if member.image %}
+			<li class="slider-item" style="background-image: url({{ member.image |  prepend: "/assets/images/members/" | prepend: site.baseurl }})">
+				<header class="slide-title"><h2><a href="{{ member.url }}">{{ member.title }}</a></h2></header>
+			</li>
+		{% endif %}
+		{% endfor %}
+	</ul>
+</div>
 <div class="page-content">
 	{% for post in site.posts %}
 		<article class="h-entry home-post">
@@ -36,3 +47,4 @@ layout: default
 	{% endfor %}
 	<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 </div>
+

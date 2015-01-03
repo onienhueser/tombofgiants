@@ -2,6 +2,8 @@
 layout: page
 title: Daniel - Bass & Vocals
 parent: /band/
+image: daniel.jpg
+pos: 4
 ---
 
 Name: Daniel Melchior

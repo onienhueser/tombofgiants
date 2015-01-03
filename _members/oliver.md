@@ -3,6 +3,7 @@ layout: person
 title: Oliver - Gitarre & Vocals
 parent: /band/
 image: olli.jpg
+pos: 2
 ---
 
 Name: Oliver Nienhüser
