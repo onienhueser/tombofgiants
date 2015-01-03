@@ -7,7 +7,7 @@ layout: default
 		{% for member in sorted_members %}
 		{% if member.image %}
 			<li class="slider-item" style="background-image: url({{ member.image |  prepend: "/assets/images/members/" | prepend: site.baseurl }})">
-				<header class="slide-title"><h2><a href="{{ member.url }}">{{ member.title }}</a></h2></header>
+				<header class="slide-title"><h2><a href="{{ member.url | prepend: site.baseurl }}">{{ member.title }}</a></h2></header>
 			</li>
 		{% endif %}
 		{% endfor %}
@@ -20,7 +20,7 @@ layout: default
 <div class="page-content">
 	{% for post in site.posts %}
 		<article class="h-entry home-post">
-			<h2 class="p-name"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+			<h2 class="p-name"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
 			<small class="p-meta">
 				{% if post.author %}Veröffentlicht von <span class="p-autor h-card">{{ post.author }}</span>{% endif %}
 				am <time class="dt-published" datetime="{{ post.date | date_to_xmlschema }}">
@@ -45,7 +45,7 @@ layout: default
 			</small>
 			<div class="p-summary">
 				{{ post.excerpt }}
-				<a href="{{ post.url }}">&#8594; Weiterlesen</a>
+				<a href="{{ post.url | prepend: site.baseurl }}">&#8594; Weiterlesen</a>
 			</div>
 		</article>
 	{% endfor %}
