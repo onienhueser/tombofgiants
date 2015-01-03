@@ -45,7 +45,7 @@ layout: default
 			</small>
 			<div class="p-summary">
 				{{ post.excerpt }}
-				<a href="{{ post.url | prepend: site.baseurl }}">&#8594; Weiterlesen</a>
+				{% if post.readon %}<a href="{{ post.url | prepend: site.baseurl }}">&#8594; Weiterlesen</a>{% endif %}
 			</div>
 		</article>
 	{% endfor %}
