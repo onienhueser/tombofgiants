@@ -1,0 +1,1 @@
+$(".slider").addClass("slider--visible");var unslider=$(".slider").unslider({speed:500,delay:3e3,complete:function(){},keys:!0,dots:!0,fluid:!1});$(".slider-arrow").click(function(){var s=this.className.split(" ")[1];unslider.data("unslider")[s]()});
