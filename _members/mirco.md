@@ -2,6 +2,8 @@
 layout: page
 title: Mirco - Drums
 parent: /band/
+image: mirco.jpg
+pos: 5
 ---
 
 Name: Mirco Nienhüser

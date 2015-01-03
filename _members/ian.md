@@ -2,6 +2,8 @@
 layout: page
 title: Ian - Gitarre
 parent: /band/
+image: ian.jpg
+pos: 3
 ---
 
 Name: Ian Michael Waters

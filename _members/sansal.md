@@ -2,6 +2,8 @@
 layout: page
 title: Sansal - VOCALS
 parent: /band/
+image: sansal.jpg
+pos: 1
 ---
 
 Name: Sansal 
