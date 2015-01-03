@@ -90,6 +90,37 @@ p {
 	background-position: center -100px;
 	z-index: 1;
 }
+.slider-navigation {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	z-index: 2;
+	width: 105px;
+	height: 50px;
+	line-height: 50px;
+}
+.slider-arrow {
+	display: inline-block;
+	float: left;
+	width: 50px;
+	height: 50px;
+	margin: 0;
+	padding: 0;
+	background: #000;
+	color: #fff;
+	text-align: center;
+	box-sizing: border-box;
+	transition: 0.5s ease;
+	&:first-child {
+		margin-right: 5px;
+	}
+	&.next {
+		padding: 0 0 0 5px;
+	}
+	&:hover {
+		background: @green;
+	}
+}
 .slide-title {
 	position: absolute;
 	bottom: 0;
@@ -103,4 +134,15 @@ p {
 }
 .slide-title h2 {
 	margin: 0;
+}
+.slide-title a {
+	color: #fff;
+}
+.slide-title a:hover {
+	color: @green;
+}
+
+// Font Awesome Alignment fix
+.fa {
+	vertical-align: middle;
 }

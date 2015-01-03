@@ -11,6 +11,7 @@ twitter_username: tombofgiants
 # Build settings
 markdown: kramdown
 include: ['.htaccess']
+exclude: ['assets/js/page-exclusive/slider.js']
 
 # about us page
 collections:
