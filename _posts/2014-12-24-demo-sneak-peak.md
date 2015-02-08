@@ -3,6 +3,7 @@ layout: post
 title:  "Demo Sneak Peak zu Weihnachten"
 author: Tomb of Giants
 date:   2014-12-24 14:00:00
+category: main
 ---
 Wir konnten es uns natürlich nicht verkneifen, euch etwas zu Weihnachten zu schenken.
 

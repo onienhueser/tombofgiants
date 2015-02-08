@@ -1,0 +1,17 @@
+---
+layout: page
+title: Band
+permalink: /band/
+hasSubs: true
+---
+
+<p>Wir sind die Band "Tomb of Giants" und bestehen derzeit aus:</p>
+
+<p>{% assign currentUrl = page.url | remove: 'index.html' %}
+{% for link in site.data.nav %}
+	{% if link.subcategories != null and (link.href == page.parent or link.href == currentUrl) %}
+		{% for subLink in link.subcategories %}
+		<a href="{{ subLink.subhref | prepend: site.baseurl }}">{{ subLink.subtitle }}</a><br>
+		{% endfor %}
+	{% endif %}
+{% endfor %}</p>

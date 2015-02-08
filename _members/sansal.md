@@ -6,14 +6,6 @@ image: sansal.jpg
 pos: 1
 ---
 
-Name: Sansal 
-
-Instrument: Gesang
-
-Sonstige Instrumente:
-
-* Gitarre
-
 Lieblingsbands:
 
 * Iron Maiden

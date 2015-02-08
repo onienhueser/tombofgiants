@@ -1,19 +1,10 @@
 ---
 layout: person
-title: Oliver - Gitarre & Vocals
+title: Oliver - Gitarre
 parent: /band/
 image: olli.jpg
 pos: 2
 ---
-
-Name: Oliver Nienhüser
-
-Geboren: 1990
-
-Instrument:
-
-* Gitarre (seit 2006)
-* Vocal (seit 2014)
 
 Lieblingsbands:
 

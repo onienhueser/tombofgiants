@@ -1,0 +1,23 @@
+---
+layout: default
+title: Live
+permalink: /live/
+---
+<div class="page-content">
+	{% for post in site.categories.gig %}
+		<article class="h-entry home-post">
+			<h2 class="p-name">{{ post.title }}</h2>
+			<p class="p-meta">
+				<time class="dt-published" datetime="{{ post.gigdate | date_to_xmlschema }}">
+					{{ post.gigdate | date: "%d.%m.%Y" }}
+					um {{post.gigtime | date: "%R"}} Uhr
+				</time><br>
+				{{post.location}}<br>
+				{{post.adress}}
+			</p>
+			<div class="p-summary">
+				{{ post.excerpt }}
+			</div>
+		</article>
+	{% endfor %}
+</div>
