@@ -11,17 +11,17 @@
 			{{ content }}
 		</main>
 		{% include footer.html %}
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+		<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+		<script src="{{ "/assets/js/unslider.js" | prepend: site.baseurl }}"></script>
+		{% if page.url == "/index.html" %}
+		<script type="text/javascript" src="{{ "/assets/js/page-exclusive/slider-min.js" | prepend: site.baseurl }}"></script>
+		{% endif %}
+		{% if page.parent == "/band/" %}
+		<script type="text/javascript">
+			var imageHeight = window.innerHeight - $(".header").height() - ($(".header-navigation").height()*2);
+			$(".page-image-wrap").css("max-height", imageHeight);
+		</script>
+		{% endif %}
 	</body>
 </html>
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
-<script src="{{ "/assets/js/unslider.js" | prepend: site.baseurl }}"></script>
-{% if page.url == "/index.html" %}
-<script type="text/javascript" src="{{ "/assets/js/page-exclusive/slider-min.js" | prepend: site.baseurl }}"></script>
-{% endif %}
-{% if page.parent == "/band/" %}
-<script type="text/javascript">
-	var imageHeight = window.innerHeight - $(".header").height() - ($(".header-navigation").height()*2);
-	$(".page-image-wrap").css("max-height", imageHeight);
-</script>
-{% endif %}
