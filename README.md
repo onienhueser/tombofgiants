@@ -1,2 +1,2 @@
 # Tomb of Giants
-The Tomb Of Giants Homepage
+The Tomb of Giants Homepage
