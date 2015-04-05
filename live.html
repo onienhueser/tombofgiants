@@ -5,6 +5,9 @@ permalink: /gigs/
 ---
 
 {% for post in site.categories.gig %}
+	{% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
+	{% capture posttime %}{{post.gigdate | date: '%s'}}{% endcapture %}
+	{% if posttime >= nowunix %}
 	<article class="h-entry home-post">
 		<h2 class="p-name">{{ post.title }}</h2>
 		<p class="p-meta">
@@ -19,4 +22,5 @@ permalink: /gigs/
 			{{ post.excerpt }}
 		</div>
 	</article>
+	{% endif %}
 {% endfor %}
