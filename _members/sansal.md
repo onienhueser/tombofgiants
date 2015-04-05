@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: person
 title: Sansal - VOCALS
 parent: /band/
 image: sansal.jpg

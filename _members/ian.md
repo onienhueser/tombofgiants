@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: person
 title: Ian - Gitarre
 parent: /band/
 image: ian.jpg

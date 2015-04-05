@@ -1,8 +1,8 @@
 ---
-layout: page
+layout: person
 title: Daniel - Bass
 parent: /band/
-image: daniel.jpg
+image: daniel2.jpg
 pos: 4
 ---
 

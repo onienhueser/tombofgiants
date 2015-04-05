@@ -50,3 +50,7 @@ Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unt
 &nbsp;
 
 _Quellverweis: [eRecht24](http://www.e-recht24.de/muster-disclaimer.html)_
+
+**Urheberrechtshinweise**
+
+Alle mit dem Logo "VS - Vanessa Schwarkow" gekennzeichneten Bilder unterliegen dem Urheberrecht von Vanessa Schwarkow.

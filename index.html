@@ -1,7 +1,6 @@
 ---
 layout: default
 ---
-{% if false %}
 <div class="slider" aria-hidden="true">
 	<ul class="slider-list">
 		{% assign sorted_members= (site.members | sort: 'pos') %}
@@ -18,7 +17,6 @@ layout: default
 		<button class="slider-arrow next"><i class="fa fa-chevron-right"></i></button>
 	</nav>
 </div>
-{% endif %}
 <div class="page-content">
 	{% for post in site.categories.main %}
 		<article class="h-entry home-post">
