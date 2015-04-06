@@ -1,5 +1,5 @@
 CACHE MANIFEST
-#time 1428278287
+#time 1428279525
 
 /favicon.ico
 /assets/css/main.css
@@ -11,3 +11,4 @@ CACHE MANIFEST
 /assets/images/members/ian.jpg
 /assets/images/members/daniel.jpg
 /assets/images/members/mirco.jpg
+/assets/js/page-exclusive/slider-min.js
