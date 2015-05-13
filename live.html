@@ -20,7 +20,7 @@ permalink: /gigs/
 		</p>
 		<div class="p-summary">
 			{{ post.excerpt }}
-			<a href="/assets/images/ads/{{post.image}}" class="post-imageLink"><img src="/assets/images/ads/{{post.image}}" alt="{{post.imageAlt}}" class="post-image"></a>
+			{% if post.image != null %}<a href="/assets/images/ads/{{post.image}}" class="post-imageLink"><img src="/assets/images/ads/{{post.image}}" alt="{{post.imageAlt}}" class="post-image"></a>{% endif %}
 		</div>
 	</article>
 	{% endif %}
