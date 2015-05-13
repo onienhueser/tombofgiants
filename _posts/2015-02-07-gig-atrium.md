@@ -1,9 +1,14 @@
 ---
 layout: post
-title:  Support für Big Balls im Atrium Rödinghausen
+title:  Rock im Atrium Rödinghausen
 gigdate: 2015-06-13 00:00
-gigtime: 19:00:00 +0100
+gigtime: 17:30:00 +0100
 location: Atrium
-adress: 32289 Rödinghausen
+adress: Zum Nonnenstein 21, 32289 Rödinghausen
 category: gig
+image: plakat_atrium_15.jpg
+imageAlt: Plakat Big Ball & Tomb of Giants Atrium Rödinghausen
 ---
+Am 13.06.2015 spielen Tomb of Giants als Vorgruppe der Big Balls im Atrium Rödinghausen.<br>
+Einlass ab 18:00 Uhr, Beginn: 18:30 Uhr.<br>
+Der Eintritt beläuft sich auf 10€.
