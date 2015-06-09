@@ -36,6 +36,6 @@ ErrorDocument 404 /404.html
   Header set Cache-Control "max-age=1209600, public"
  </filesmatch>
  <filesmatch "\\.(js)$">
-  Header set Cache-Control "max-age=216000, private"
+  Header set Cache-Control "max-age=2629700, private"
  </filesmatch>
 </ifmodule>
