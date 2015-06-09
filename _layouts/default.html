@@ -19,8 +19,10 @@
 		{% endif %}
 		{% if page.parent == "/band/" %}
 		<script type="text/javascript">
-			var imageHeight = window.innerHeight - $(".header").height() - ($(".header-navigation").height()*2);
-			$(".page-image-wrap").css("max-height", imageHeight);
+			$(document).ready(function() {
+				var imageHeight = window.innerHeight - $(".header").height() - ($(".header-navigation").height()*2);
+				$(".page-image-wrap").css("max-height", imageHeight);
+			}
 		</script>
 		{% endif %}
 	</body>
