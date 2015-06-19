@@ -20,7 +20,7 @@ Am Knie 2,<br>
 </tr>
 <tr>
 <td>E-Mail:</td>
-<td>band@tombofgiants.net</td>
+<td>kontakt@tombofgiants.de</td>
 </tr>
 </tbody>
 </table>
