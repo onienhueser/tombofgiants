@@ -1,13 +1,13 @@
 ---
 layout: page
-title: Zukünftige Gigs
-permalink: /gigs/
+title: Gespielte Gigs
+permalink: /gigs/past/
 ---
 
 {% for post in site.categories.gig %}
 	{% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
 	{% capture posttime %}{{post.gigdate | date: '%s'}}{% endcapture %}
-	{% if posttime >= nowunix %}
+	{% if posttime <= nowunix %}
 	<article class="h-entry home-post">
 		<h2 class="p-name">{{ post.title }}</h2>
 		<p class="p-meta">

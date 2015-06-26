@@ -1,0 +1,38 @@
+---
+layout: page
+title: Zukünftige Gigs
+permalink: /gigs/
+---
+{% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
+{% assign postcount = 0 %}
+{% for post in site.categories.gig %}
+	{% capture posttime %}{{post.gigdate | date: '%s'}}{% endcapture %}
+	{% if posttime >= nowunix %}
+	{% capture postcount %}{{postcount | plus: 1}}{% endcapture %}
+	<article class="h-entry home-post">
+		<h2 class="p-name">{{ post.title }}</h2>
+		<p class="p-meta">
+			<time class="dt-published" datetime="{{ post.gigdate | date_to_xmlschema }}">
+				{{ post.gigdate | date: "%d.%m.%Y" }}
+				um {{post.gigtime | date: "%R"}} Uhr
+			</time><br>
+			{{post.location}}<br>
+			{{post.adress}}
+		</p>
+		<div class="p-summary">
+			{{ post.excerpt }}
+			{% if post.image != null %}<a href="/assets/images/ads/{{post.image}}" class="post-imageLink"><img src="/assets/images/ads/{{post.image | replace: '.jpg', '.thumb.jpg' | replace: '.png', '.thumb.png'}}" alt="{{post.imageAlt}}" class="post-image"></a>{% endif %}
+		</div>
+	</article>
+	{% endif %}
+{% endfor %}
+{% if postcount == 0 %}
+	<article class="h-entry home-post">
+		<h2 class="p-name">Aktuell sind keine Gigs geplant</h2>
+		<div class="p-summary">
+			Im moment sind keine Gigs in Planung.<br>
+			Du hast einen Tipp für uns, wo wir unbedingt spielen sollten?<br>
+			Schreibe uns eine E-Mail an <a href="mailto:kontakt@tombofgiants.de">kontakt@tombofgiants.de</a>
+		</div>
+	</article>
+{% endif %}
