@@ -16,12 +16,16 @@
 		{% if page.url == "/index.html" %}
 		<script type="text/javascript" src="{{ "/assets/js/slider-min.js" | prepend: site.baseurl }}" async></script>
 		{% endif %}
-		{% if page.parent == "/band/" %}
+		{% if page.parent == "/band/" or page.permalink == "/band/" %}
 		<script type="text/javascript">
 			$(document).ready(function() {
 				var imageHeight = window.innerHeight - $(".header").height() - ($(".header-navigation").height()*2);
-				$(".page-image-wrap").css("max-height", imageHeight);
-			}
+				if (imageHeight > 350) {
+					$(".page-image-wrap").css("max-height", imageHeight);
+				} else {
+					$(".page-image-wrap").css("max-height", 350);
+				}
+			});
 		</script>
 		{% endif %}
 	</body>
