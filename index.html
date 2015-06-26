@@ -6,7 +6,7 @@ layout: default
 		{% assign sorted_members= (site.members | sort: 'pos') %}
 		{% for member in sorted_members %}
 		{% if member.image %}
-			<li class="slider-item" style="background-image: url({{ member.image |  prepend: "/assets/images/members/" | prepend: site.baseurl }})">
+			<li class="slider-item" style="background-image: url({{ member.image |  prepend: "/assets/images/members/profile/" | prepend: site.baseurl }})">
 				<header class="slide-title"><h2><a href="{{ member.url | prepend: site.baseurl }}">{{ member.title }}</a></h2></header>
 			</li>
 		{% endif %}
