@@ -1,5 +1,6 @@
 ---
 layout: post
+expires: true
 title:  "Ankündigung: Tomb of Giants bei Rock am Feuer"
 author: Tomb of Giants
 date:   2015-03-11 18:00:00

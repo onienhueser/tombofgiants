@@ -1,5 +1,6 @@
 ---
 layout: post
+expires: true
 title:  Rock im Atrium Rödinghausen
 gigdate: 2015-06-13 18:00 +000
 gigtime: 18:30:00 +000
