@@ -18,7 +18,10 @@ layout: default
 	</nav>
 </div>
 <div class="page-content">
+	{% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
 	{% for post in site.categories.main %}
+		{% capture posttime %}{{post.date | date: '%s'}}{% endcapture %}
+		{% if (post.expires == null || post.expires == false) || (post.expires && posttime >= nowunix) %}
 		<article class="h-entry home-post">
 			<h2 class="p-name"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
 			<div class="p-summary">
@@ -27,6 +30,7 @@ layout: default
 				{% if post.readon %}<a href="{{ post.url | prepend: site.baseurl }}">&#8594; Weiterlesen</a>{% endif %}
 			</div>
 		</article>
+		{% endif %}
 	{% endfor %}
 	<p class="rss-subscribe"><a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS-Feed abonnieren</a></p>
 </div>
