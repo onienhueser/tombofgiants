@@ -18,10 +18,10 @@ layout: default
 	</nav>
 </div>
 <div class="page-content">
-	{% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
+	{% assign nowunix = 'now' | date: '%s' %}
 	{% for post in site.categories.main %}
-		{% capture posttime %}{{post.date | date: '%s'}}{% endcapture %}
-		{% if (post.expires == null || post.expires == false) || (post.expires && posttime >= nowunix) %}
+		{% assign posttime = post.date | date: '%s' %}
+		{% if (post.expires == null || !post.expires) or posttime >= nowunix %}
 		<article class="h-entry home-post">
 			<h2 class="p-name"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
 			<div class="p-summary">
