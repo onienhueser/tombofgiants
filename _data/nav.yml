@@ -5,6 +5,9 @@
   href: "/band/"
   subcategories:
 
+   - subtitle: "Band - Bio"
+     subhref: "/band/"
+
    - subtitle: "Sansal - Vocals"
      subhref: "/band/sansal/"
 
