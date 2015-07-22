@@ -3,7 +3,7 @@ layout: person
 title: Band
 image: band.jpg
 permalink: /band/
-hasSubs: true
+hasSubs: false
 ---
 
 ##Mitglieder
@@ -11,10 +11,10 @@ hasSubs: true
 {% assign members = site.members | sort: 'pos' %}
 <div class="members">
 {% for member in members %}
-	<a class="member" href="{{member.permalink | prepend: site.baseurl}}">
+	<div class="member">
 		<img class="member-image" src="{{member.smallImage | prepend: "/assets/images/members/small/"}}" alt="{{member.title}}">
 		<span class="member-name">{{member.title}}</span>
-	</a>	
+	</div>	
 {% endfor %}
 </div>
 
