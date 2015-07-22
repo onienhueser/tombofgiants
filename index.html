@@ -1,22 +1,8 @@
 ---
-layout: default
+layout: person
+title: Tomb of Giants
+image: band.jpg
 ---
-<div class="slider" aria-hidden="true">
-	<ul class="slider-list">
-		{% assign sorted_members= (site.members | sort: 'pos') %}
-		{% for member in sorted_members %}
-		{% if member.image %}
-			<li class="slider-item" style="background-image: url({{ member.image |  prepend: "/assets/images/members/profile/" | prepend: site.baseurl }})">
-				<header class="slide-title"><h2><a href="{{ member.url | prepend: site.baseurl }}">{{ member.title }}</a></h2></header>
-			</li>
-		{% endif %}
-		{% endfor %}
-	</ul>
-	<nav class="slider-navigation">
-		<button class="slider-arrow prev"><i class="fa fa-chevron-left"></i></button>
-		<button class="slider-arrow next"><i class="fa fa-chevron-right"></i></button>
-	</nav>
-</div>
 <div class="page-content">
 	{% assign nowunix = 'now' | date: '%s' %}
 	{% for post in site.categories.main %}

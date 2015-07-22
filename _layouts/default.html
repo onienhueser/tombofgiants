@@ -13,13 +13,10 @@
 		{% include footer.html %}
 		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 		<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
-		{% if page.url == "/index.html" %}
-		<script type="text/javascript" src="{{ "/assets/js/slider-min.js" | prepend: site.baseurl }}" async></script>
-		{% endif %}
-		{% if page.parent == "/band/" or page.permalink == "/band/" %}
+		{% if page.image %}
 		<script type="text/javascript">
 			$(document).ready(function() {
-				var imageHeight = window.innerHeight - $(".header").height() - ($(".header-navigation").height()*2);
+				var imageHeight = window.innerHeight - $(".header").height() - ($(".header-navigation").height(){% if page.hasSubs %}*2{% endif %});
 				if (imageHeight > 350) {
 					$(".page-image-wrap").css("max-height", imageHeight);
 				} else {
