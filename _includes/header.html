@@ -11,6 +11,7 @@
 		{% endif %}
 	{% endfor %}
 		</nav>
+	{% if page.hasSubs %}
 	{% for link in site.data.nav %}
 		{% if link.subcategories != null and (link.href == page.parent or link.href == currentUrl) %}
 		<nav class="header-navigation header-navigation--sub">
@@ -20,3 +21,4 @@
 		</nav>
 		{% endif %}
 	{% endfor %}
+	{% endif %}
