@@ -1,7 +1,6 @@
 ---
 layout: post
-expires: true
-date: 2015-08-22
+date: 2015-07-25
 title:  Rockt das Stahlwerk
 gigdate: 2015-08-22 20:00 +000
 gigtime: 20:00:00 +000
