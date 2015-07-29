@@ -5,6 +5,7 @@ layout: default
 	{% if page.image %}<div class="page-image-wrap"><img class="page-image" src="{{page.image | prepend: "/assets/images/members/profile/" | prepend: site.baseurl }}" alt="{{ page.imageAlt }}" /></div>{% endif %}
 	<div class="page-content {% if page.image %}page-content--pullTop{% endif %}">
 		<h2 class="page-title page-title--pullTop">{{ page.title }}</h2>
+		{% include links.html %}
 		{{ content }}
 	</div>
 </article>
