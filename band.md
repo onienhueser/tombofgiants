@@ -1,7 +1,7 @@
 ---
 layout: person
 title: Band
-image: band.jpg
+image: band3.jpg
 permalink: /band/
 hasSubs: false
 ---
