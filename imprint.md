@@ -1,13 +1,13 @@
 ---
 layout: page
 title: Impressum
-permalink: /imprint/
+permalink: /impressum/
 ---
 
 # Angaben gemäß § 5 TMG:
 
-Daniel Melchior,<br>
-Am Knie 2,<br>
+Daniel Melchior<br>
+Am Knie 2<br>
 32130 Enger
 
 ## Kontakt:
@@ -50,7 +50,3 @@ Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unt
 &nbsp;
 
 _Quellverweis: [eRecht24](http://www.e-recht24.de/muster-disclaimer.html)_
-
-**Urheberrechtshinweise**
-
-Alle mit dem Logo "VS - Vanessa Schwarkow" gekennzeichneten Bilder unterliegen dem Urheberrecht von Vanessa Schwarkow.
