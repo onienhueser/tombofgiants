@@ -1,6 +1,6 @@
 body, html {
 	height: 100%;
-	font-family: @openSans;
+	font-family: $openSans;
 }
 
 html {
@@ -12,9 +12,9 @@ body {
 	width: 100%;
 	max-width: 1280px;
 	margin: 0 auto;
-	background: @darkGray;
-	color: @white;
-	border: 1px solid darken(@darkGray, 5%);
+	background: $darkGray;
+	color: $white;
+	border: 1px solid darken($darkGray, 5%);
 	border-top: none;
 	border-bottom: none;
 	overflow-x: hidden;
@@ -23,19 +23,19 @@ body {
 }
 
 a {
-	color: lighten(@darkGray,60%);
-	text-shadow: 1px 1px 1px darken(@darkGray, 5%);
+	color: lighten($darkGray,60%);
+	text-shadow: 1px 1px 1px darken($darkGray, 5%);
 	text-decoration: none;
 
-	font-family: @lato;
+	font-family: $lato;
 	font-weight: 300;
 	&:hover {
-		color: lighten(@darkGray,75%);
+		color: lighten($darkGray,75%);
 	}
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: @lato;
+	font-family: $lato;
 	font-weight: 100;
 	a {
 		font-weight: 100;
@@ -54,21 +54,21 @@ h1, h2, h3, h4, h5, h6 {
 
 .footer {
 	float: left;
-	height: @footer-height;
-	line-height: @footer-height;
+	height: $footer-height;
+	line-height: $footer-height;
 	width: 100%;
 	margin: 0;
 	padding: 0;
-	background: @green;
+	background: $green;
 	font-size: 0.85em;
-	text-shadow: 1px 1px 1px darken(@darkGray, 5%);
+	text-shadow: 1px 1px 1px darken($darkGray, 5%);
 	box-shadow: 0px -5px 9px -6px black;
 }
 .footer-part {
 	display: inline-block;
 	float: left;
-	width: 100%/3;
-	height: @footer-height;
+	width: (100%/3);
+	height: $footer-height;
 	box-sizing: border-box;
 }
 .footer-part:first-child {
@@ -87,6 +87,6 @@ h1, h2, h3, h4, h5, h6 {
 	margin: 0 1%;
 }
 .footer-icon {
-	line-height: @footer-height;
+	line-height: $footer-height;
 	margin: 0 2%;
 }

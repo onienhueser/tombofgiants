@@ -18,3 +18,6 @@ collections:
   members:
    output: true
    permalink: /band/:path/
+
+gems:
+  - octopress-autoprefixer

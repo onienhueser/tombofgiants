@@ -8,27 +8,27 @@
 	position: relative;
 	float: left;
 	width: 100%;
-	height: @header-logo-height;
+	height: $header-logo-height;
 	margin: 0;
 
-	background: @black;
+	background: $black;
 	z-index: 3;
 }
 .header-logo {
-	height: @header-logo-height;
+	height: $header-logo-height;
 }
 .header-navigation {
 	display: inline-block;
 	position: relative;
 	float: left;
-	height: @header-nav-height;
+	height: $header-nav-height;
 	width: 100%;
 	margin: 0;
-	border: 1px solid darken(@darkGray, 5%);
+	border: 1px solid darken($darkGray, 5%);
 	border-left: none;
 	border-right: none;
 
-	background: @green;
+	background: $green;
 	z-index: 2;
 	box-shadow: 0px 4px 9px -4px black;
 }
@@ -38,9 +38,9 @@
 }
 .header-navigation-link {
 	float: left;
-	height: @header-nav-height;
-	width: 100%/4;
-	line-height: @header-nav-height + 2;
+	height: $header-nav-height;
+	width: (100%/4);
+	line-height: $header-nav-height + 2;
 	transition: ease .5s;
 	cursor: pointer;
 	border-left: 1px solid rgba(0, 0, 0, 0.2);
@@ -58,6 +58,6 @@
 }
 .header-navigation-link--sub {
 	font-size: 0.75em;
-	border-left-color: darken(@darkGray, 5%);
+	border-left-color: darken($darkGray, 5%);
 	width: 100%/6;
 }

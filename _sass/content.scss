@@ -3,18 +3,18 @@ main {
 	float: left;
 	display: block;
 	width: 100%;
-	min-height: ~"calc(100% -" (@header-logo-height + @header-nav-height + @footer-height + 3) ~"-" @content-margin ~")";
-	margin: 0 0 @content-margin 0;
+	min-height: calc(100% - ($header-logo-height + $header-nav-height + $footer-height + 3) - $content-margin);
+	margin: 0 0 $content-margin 0;
 }
 .main--subMenu {
-	min-height: ~"calc(100% -" (@header-logo-height + (@header-nav-height*2) + @footer-height + 5) ~"-" @content-margin ~")";
+	min-height: calc(100% - ($header-logo-height + ($header-nav-height*2) + $footer-height + 5) - $content-margin);
 }
 .page-content {
 	display: block;
 	box-sizing: border-box;
 
 	width: 100%;
-	max-width: @content-width;
+	max-width: $content-width;
 	margin: 0 auto;
 	padding: 0 1%;
 
@@ -54,7 +54,7 @@ p {
 .page-content--pullTop {
 	position: relative;
 	margin-top: -4.5rem;
-	background: @darkGray;
+	background: $darkGray;
 	z-index: 2;
 }
 .page-title--pullTop {
@@ -134,7 +134,7 @@ p {
 		padding: 0 0 0 5px;
 	}
 	&:hover {
-		background: @green;
+		background: $green;
 	}
 }
 .slide-title {
@@ -155,7 +155,7 @@ p {
 	color: #fff;
 }
 .slide-title a:hover {
-	color: @green;
+	color: $green;
 }
 
 .members {
