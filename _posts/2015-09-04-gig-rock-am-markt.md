@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2015-08-26
-title:  Rockt am Markt
+title:  Rock am Markt
 gigdate: 2015-09-04 20:00 +000
 gigtime: 19:00:00 +000
 location: Heckewerth Parkplatz
