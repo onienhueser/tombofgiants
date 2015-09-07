@@ -11,10 +11,12 @@ permalink: /gigs/past/
 	<article class="h-entry home-post">
 		<h2 class="p-name">{{ post.title }}</h2>
 		<p class="p-meta">
+			{% if post.gigdate != null %}
 			<time class="dt-published" datetime="{{ post.gigdate | date_to_xmlschema }}">
 				{{ post.gigdate | date: "%d.%m.%Y" }}
-				um {{post.gigtime | date: "%R"}} Uhr
+				{% if post.gigtime != null %} um {{post.gigtime | date: "%R"}} Uhr{% endif %}
 			</time><br>
+			{% endif %}
 			{{post.location}}<br>
 			{{post.adress}}
 		</p>
