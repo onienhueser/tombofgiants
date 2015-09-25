@@ -66,8 +66,12 @@ p {
 	text-decoration: none;
 	border: none;
 	outline: none;
+
+	display: inline-block;
+	max-width: 100%;
 }
 .post-image {
+	width: 100%;
 	max-width: 300px;
 }
 .post-image--large {
