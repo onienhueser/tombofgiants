@@ -1,15 +1,16 @@
 body, html {
 	height: 100%;
-	font-family: $openSans;
+	width: 100%;
+	overflow-x: hidden;
 }
 
 html {
-	width: 100%;
 	box-sizing: border-box;
+	font-family: $openSans;
 }
 
 body {
-	width: 100%;
+	-webkit-overflow-scrolling: touch;
 	margin: 0 auto;
 	background: $darkGray;
 	color: $white;
