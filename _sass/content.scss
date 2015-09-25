@@ -16,7 +16,8 @@ main {
 	width: 100%;
 	max-width: $content-width;
 	margin: 0 auto;
-	padding: 0 1%;
+	@media #{$desktop} { padding: 0 1%; }
+	@media #{$mobile} { padding: 0 1em; }
 
 	color: #cecece;
 	font-size: 0.95em;
@@ -53,7 +54,7 @@ p {
 }
 .page-content--pullTop {
 	position: relative;
-	margin-top: -4.5rem;
+	@media #{$desktop} { margin-top: -4.5rem; }
 	background: $darkGray;
 	z-index: 2;
 }
@@ -162,15 +163,36 @@ p {
 }
 
 .members {
-	display: flex;
+	@media #{$mobile} {
+		max-width: 400px;
+		margin: auto;
+		&:before, &:after {
+			content: "";
+			display: table;
+		}
+		&:after {
+			clear: both;
+		}
+		zoom: 1;
+	}
 }
 
 .member {
+	display: inline-block;
 	position: relative;
-	width: 200px;
-	margin: .5rem 0 .5rem 1rem;
-	&:first-child {
-		margin-left: 0;
+	@media #{$desktop} {
+		width: 18%;
+		max-width: 200px;
+		margin: .5rem 0 .5rem 2%;
+		&:first-child {
+			margin-left: 0;
+		}
+	}
+	@media #{$mobile} {
+		float: left;
+		width: 48%;
+		max-width: 192px;
+		margin: 0.5em 1%;
 	}
 }
 

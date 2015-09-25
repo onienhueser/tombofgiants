@@ -15,13 +15,14 @@
 	z-index: 3;
 }
 .header-logo {
-	height: $header-logo-height;
+	max-width: 100%;
+	max-height: $header-logo-height;
 }
 .header-navigation {
 	display: inline-block;
 	position: relative;
 	float: left;
-	height: $header-nav-height;
+	@media #{$desktop} { height: $header-nav-height; }
 	width: 100%;
 	margin: 0;
 	border: 1px solid darken($darkGray, 5%);
@@ -39,11 +40,11 @@
 .header-navigation-link {
 	float: left;
 	height: $header-nav-height;
-	width: (100%/4);
+	@media #{$desktop} { width: (100%/3); border-left: 1px solid rgba(0, 0, 0, 0.2); }
+	@media #{$mobile} { width: 100%; border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
 	line-height: $header-nav-height + 2;
 	transition: ease .5s;
 	cursor: pointer;
-	border-left: 1px solid rgba(0, 0, 0, 0.2);
 	box-sizing: border-box;
 	text-align: center;
 	text-transform: uppercase;

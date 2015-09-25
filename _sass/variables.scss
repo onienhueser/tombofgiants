@@ -22,10 +22,10 @@ $footer-height: 50px;
 // Responsive Breakpoints
 // -------------------------
 $screen: "only screen";
-$mobile: "(max-width : 1024px)";
+$mobile: "(max-width : 680px)";
 $desktop: "(min-width: 1025px)";
 
 // Font Stacks
 // -------------------------
-$openSans: 'Open Sans', sans-serif;
-$lato: 'Lato', sans-serif;
+$openSans: "Open Sans", "Helvetica Neue Light", Helvetica, Arial, sans-serif;
+$lato: "Lato", "Helvetica Neue Light", Helvetica, Arial, sans-serif;
