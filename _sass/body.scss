@@ -17,9 +17,6 @@ body {
 	background: $darkGray;
 	color: $white;
 	@media #{$desktop} {
-		border: 1px solid darken($darkGray, 5%);
-		border-top: none;
-		border-bottom: none;
 		overflow-x: hidden;
 	}
 
