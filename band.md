@@ -20,7 +20,8 @@ hasSubs: false
 
 ##Anfang der Band in 2013
 
-Die Band setzte sich zu Beginn aus Mirco (Drums) und Oliver Nienhüser (Gitarre) sowie Ian Waters (Gitarre) zusammen. Später kam Daniel Melchior (Bass) dazu. Zusammen mit Thomas “Chicken” Klaus von den Big Balls gab es im November 2013 einen eindrucksvollen ersten Auftritt als “Chicken and Friends” im Gasthof “zum Nonnenstein” in Rödinghausen mit Coversongs von AC/DC, Accept, Iron Maiden und Deep Purple. Nach dem Auftakt entstanden schnell eigene Songs wie „Metal Prowler“ und „Backyard Rules“, die sich fest in die Setliste etablieren konnten.
+Die Band setzte sich zu Beginn aus Mirco (Drums) und Oliver Nienhüser (Gitarre) sowie Ian Waters (Gitarre) zusammen. Später kam Daniel Melchior (Bass) dazu. Zusammen mit Thomas “Chicken” Klaus von den Big Balls gab es im November 2013 einen eindrucksvollen ersten Auftritt als “Chicken and Friends” im Gasthof “zum Nonnenstein” in Rödinghausen mit Coversongs von AC/DC, Accept, Iron Maiden und Deep Purple. 
+Nach dem Auftakt wurde der Entschluss gefasst eine neue Band zu gründen und eigene Songs zu schreiben und zu proben. Die neue Bandbesetzung bestand aus Oliver Nienhüser, Mirco Nienhüser, Ian Waters und Daniel Melchior. Schnell entstanden Songs wie „Metal Prowler“ und „Backyard Rules“, die sich mittlerweile fest in die Setliste etablieren konnten.
 
 ##Stilles - Lautes 2014
 
@@ -28,7 +29,7 @@ Die Band setzte sich zu Beginn aus Mirco (Drums) und Oliver Nienhüser (Gitarre
 
 ##Ab ins Rampenlicht 2015
 
-Als Sansal Ende 2014 die Band komplettierte war sofort klar: 2015 wird LAUT. Und das wurde es. Am 04.04.2015 spielten Tomb of Giants mit der explosiven Hard Rock-Kombo Fall Out ihr Debüt- Konzert mit der aktuellen Besetzung bei Rock am Feuer in Buer. Zeitgleich begannen die Aufnahmen zur Tomb of Gaints EP, die derzeit große Fortschritte macht. Mitte Juni spielten Tomb of Giants als Vorgruppe der Big Balls im Atrium Rödinghausen. Weitere Auftritte sind im August und September geplant.
+Als Sansal Ende 2014 die Band komplettierte war sofort klar: 2015 wird LAUT. Und das wurde es. Am 04.04.2015 spielten Tomb of Giants mit der explosiven Hard Rock-Kombo Fall Out ihr Debüt- Konzert mit der aktuellen Besetzung bei Rock am Feuer in Buer. Zeitgleich begannen die Aufnahmen zur Tomb of Gaints EP, die derzeit große Fortschritte macht. Mitte Juni spielten Tomb of Giants als Vorgruppe der Big Balls im Atrium Rödinghausen. Im August folgte ein kleinerer Gig im Alten Stahlwerk Melle. Anfang September spielten Tomb of Giants bei Rock am Markt vor begeistertem Publikum und zeigten erneut ihr Können.
 
 ##Musikstil der Band
 
